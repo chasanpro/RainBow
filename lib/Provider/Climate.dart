@@ -5,8 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class ClimateProvider with ChangeNotifier {
+
   var timeWeatherdata, next_WeatherList, cityNameList, liveWeather;
   String homeIconPath = "assets/thunder.png";
+  String cityName = "Select Your City";
   String dgx = "°C";
   String token = "";
   String date = "";
@@ -58,7 +60,7 @@ class ClimateProvider with ChangeNotifier {
 
   Future<int> create(String email, String password, String name, String country,
       String phone) async {
-    String url = "https://hiring-test.a2dweb.com/login";
+    String url = "https://hiring-test.a2dweb.com/create-user";
     var response = await http.post(
       Uri.parse(url),
       body: jsonEncode({
@@ -72,7 +74,7 @@ class ClimateProvider with ChangeNotifier {
     );
 
     if (response.statusCode == 201) {
-      print(" CREATE SUCESS");
+      print(" CREATE SUCESS 🦋🦋");
       email = email;
 
       notifyListeners();
@@ -127,7 +129,13 @@ class ClimateProvider with ChangeNotifier {
   void setCity(String idOfCity) {
     cityId = idOfCity;
 
+
     liveWeatherUpdate(cityId);
+  }
+  // ignore: non_constant_identifier_names
+  void setCityName(String city_Name) {
+    cityName = city_Name;
+    notifyListeners();
   }
 
   void liveWeatherUpdate(String cityID) async {

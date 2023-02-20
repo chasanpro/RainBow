@@ -48,7 +48,7 @@ class _logInState extends State<logIn> {
               ),
               reusableTf(
                 hintText: "Password",
-                obscureText: false,
+                obscureText: true,
                 label: "",
                 onChanged: (value) {
                   password = value;

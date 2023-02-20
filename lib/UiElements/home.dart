@@ -38,9 +38,9 @@ class _homeScreenState extends State<homeScreen> {
                     const Icon(Icons.location_on_outlined,
                         size: 30, color: Colors.white),
                     Spacebox(0, 10),
-                    const Text(
-                      "Semarang",
-                      style: TextStyle(color: Colors.white, fontSize: 18),
+                    Text(
+                      context.read<ClimateProvider>().cityName,
+                      style: const TextStyle(color: Colors.white, fontSize: 18),
                     ),
                     Spacebox(0, 20),
                     const citySelect(),

@@ -66,6 +66,14 @@ class citySelect extends StatelessWidget {
                                               .setCity(context
                                                   .read<ClimateProvider>()
                                                   .cityNameList[index]["_id"]);
+                                          Provider.of<ClimateProvider>(context,
+                                                  listen: false)
+                                              .setCityName(context
+                                                      .read<ClimateProvider>()
+                                                      .cityNameList[index]
+                                                  ["state"]);
+                                          Navigator.pop(context);
+
                                           // context
                                           //     .watch<ClimateProvider>()
                                           //     .setCity(context
