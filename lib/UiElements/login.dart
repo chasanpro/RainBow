@@ -7,8 +7,7 @@ import 'package:climate/etc/widgets.dart';
 import 'package:easy_rich_text/easy_rich_text.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:top_snackbar_flutter/custom_snack_bar.dart';
-import 'package:top_snackbar_flutter/top_snack_bar.dart';
+
 
 class logIn extends StatefulWidget {
   const logIn({super.key});
@@ -82,13 +81,8 @@ class _logInState extends State<logIn> {
                             MaterialPageRoute(
                                 builder: (context) => const homeScreen())));
                   } catch (e) {}
-                  showTopSnackBar(
-                    context as OverlayState,
-                    const CustomSnackBar.error(
-                      message:
-                          "Something went wrong. Please check your credentials and try again",
-                    ),
-                  );
+                
+                 
                 },
                 child: Column(
                   children: [
