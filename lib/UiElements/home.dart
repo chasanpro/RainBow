@@ -1,8 +1,8 @@
-import 'package:climate/Climate.dart';
-import 'package:climate/citySelect.dart';
-import 'package:climate/logout.dart';
-import 'package:climate/report.dart';
-import 'package:climate/widgets.dart';
+import 'package:climate/Provider/Climate.dart';
+import 'package:climate/UiElements/citySelect.dart';
+import 'package:climate/UiElements/logout.dart';
+import 'package:climate/UiElements/report.dart';
+import 'package:climate/etc/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';

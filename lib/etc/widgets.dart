@@ -9,6 +9,35 @@ Spacebox(double h, double w) {
 
 Color bg_color = const Color.fromRGBO(231, 231, 231, 1);
 
+greyButton(String label) {
+  return Container(
+    height: 60,
+    width: 300,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(15),
+      gradient: const LinearGradient(
+          colors: [
+            Colors.grey,
+            Color.fromRGBO(160, 163, 167, 1),
+            //add more colors for gradient
+          ],
+          begin: Alignment.topCenter, //begin of the gradient color
+          end: Alignment.bottomCenter, //end of the gradient color
+          stops: [0, 0.8] //stops for individual color
+          //set the stops number equal to numbers of color
+          ),
+    ),
+    child: Center(
+      child: Text(
+        label,
+        style: const TextStyle(
+          color: Colors.white,
+          fontSize: 18,
+        ),
+      ),
+    ),
+  );
+}
 waterButton(String label) {
   return Container(
     height: 60,

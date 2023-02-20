@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:climate/intro.dart';
+import 'package:climate/UiElements/intro.dart';
 import 'package:flutter/material.dart';
 
 class splash extends StatefulWidget {

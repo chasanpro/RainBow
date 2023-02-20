@@ -1,6 +1,6 @@
-import 'package:climate/login.dart';
-import 'package:climate/signUp.dart';
-import 'package:climate/widgets.dart';
+import 'package:climate/UiElements/login.dart';
+import 'package:climate/UiElements/signUp.dart';
+import 'package:climate/etc/widgets.dart';
 import 'package:easy_rich_text/easy_rich_text.dart';
 import 'package:flutter/material.dart';
 

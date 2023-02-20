@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:climate/widgets.dart';
+import 'package:climate/etc/widgets.dart';
 import 'package:flutter/material.dart';
 
 class logout extends StatelessWidget {

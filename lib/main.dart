@@ -1,6 +1,5 @@
-import 'package:climate/Climate.dart';
-import 'package:climate/intro.dart';
-import 'package:climate/splash.dart';
+import 'package:climate/Provider/Climate.dart';
+import 'package:climate/UiElements/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

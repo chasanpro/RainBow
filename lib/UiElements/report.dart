@@ -1,11 +1,11 @@
-import 'package:climate/weatherIcon.dart';
-import 'package:climate/widgets.dart';
+import 'package:climate/etc/weatherIcon.dart';
+import 'package:climate/etc/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'Climate.dart';
+import '../Provider/Climate.dart';
 import 'NextReport.dart';
-import 'dateParser.dart';
+import '../etc/dateParser.dart';
 
 class report extends StatefulWidget {
   const report({super.key});

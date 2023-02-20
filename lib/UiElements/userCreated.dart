@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'login.dart';
-import 'widgets.dart';
+import '../etc/widgets.dart';
 
 class userCreated extends StatelessWidget {
   const userCreated({super.key});

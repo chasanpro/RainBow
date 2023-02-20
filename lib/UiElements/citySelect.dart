@@ -1,8 +1,8 @@
 import 'dart:ui';
 
-import 'package:climate/Climate.dart';
-import 'package:climate/textField.dart';
-import 'package:climate/widgets.dart';
+import 'package:climate/Provider/Climate.dart';
+import 'package:climate/etc/textField.dart';
+import 'package:climate/etc/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

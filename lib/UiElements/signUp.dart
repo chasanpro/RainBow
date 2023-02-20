@@ -1,8 +1,8 @@
-import 'package:climate/Climate.dart';
-import 'package:climate/login.dart';
-import 'package:climate/textField.dart';
-import 'package:climate/userCreated.dart';
-import 'package:climate/widgets.dart';
+import 'package:climate/Provider/Climate.dart';
+import 'package:climate/UiElements/login.dart';
+import 'package:climate/etc/textField.dart';
+import 'package:climate/UiElements/userCreated.dart';
+import 'package:climate/etc/widgets.dart';
 import 'package:easy_rich_text/easy_rich_text.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -149,7 +149,14 @@ class _signUpState extends State<signUp> {
                           builder: (context) => const userCreated()),
                     );
                   },
-                  child: waterButton("Signup"),
+                  child: Column(
+                    children: [
+                      if (email != null && password != null && name != null)
+                        waterButton("Signup")
+                      else
+                        greyButton("Signup"),
+                    ],
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(25, 0, 29, 20),

@@ -1,11 +1,11 @@
-import 'package:climate/Climate.dart';
+import 'package:climate/Provider/Climate.dart';
 
-import 'package:climate/widgets.dart';
+import 'package:climate/etc/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'dateParser.dart';
-import 'weatherIcon.dart';
+import '../etc/dateParser.dart';
+import '../etc/weatherIcon.dart';
 
 class nextReport extends StatelessWidget {
   const nextReport({super.key});
